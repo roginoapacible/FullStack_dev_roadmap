@@ -26,23 +26,37 @@
         "f f f f f f f f f f f f" ;
 }
 
-/*rectangle layout only*/
+
 .header {
-    grid-area: h;
-    
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+
+    grid-column: 1/-1;
+    border: 1px solid black;
 }
 
 .menu {
-    grid-area: m;
-    
+    grid-row: 2/3;
+    border: 1px solid black;
 }
 
 .content {
-    grid-area: c;
-    
+    /*grid-column starts from 2 spans/ends to end -1 or you can put 13*/
+    grid-column: 2/-1;
+    grid-column: 2/-1;
+    border: 1px solid black;
 }
 
 .footer {
-    grid-area: f;
+    /*both has same effect*/
+    grid-column: 1 / span 2; /*spans to the end*/
+    grid-column: 1 / 14 ; /*target the last column line*/
+    border: 1px solid black;
 }
 
+.container3 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px);
+}
