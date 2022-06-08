@@ -1,0 +1,15 @@
+/*using media query*/
+/*if whats inside the quote is true then run the css inside of it*/
+
+/*it is important that you define them in the correct order*/
+@media screen and (max-width: 400px) {
+    .features{
+        background: red;
+    }
+}
+/*this last block will override the first block, so big size first then to bottom*/
+@media screen and (max-width: 800px) { 
+    .features{
+        background: pink;
+    }
+}
