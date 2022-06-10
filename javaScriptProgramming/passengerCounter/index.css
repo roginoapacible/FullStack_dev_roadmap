@@ -1,0 +1,43 @@
+.container{
+    border: black solid 5px;
+    padding: 50px;
+    width: 300px;
+    margin: auto;
+    background-color: grey;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+button{
+    border: none;
+    color:white;
+    background-color: brown;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px black solid;
+    margin: 5px;   
+}
+
+button:hover{
+    border: 1px white solid;
+    text-align: center;
+}
+button:active{
+    color: black;
+}
+
+.history-label{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}

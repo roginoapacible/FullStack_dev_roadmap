@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>PassengerCounter</title>
-</head>
-<body>
-    <h1>People entered: </h1>
-    <h2 id="count-el">0</h2>
-    <button>Add</button>
-    <button>Save</button>
-    <script src="index.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>People entered:</h1>
+      <h2 id="count-el">0</h2>
+      <!--Create an increment button with the id="increment-btn"-->
+      <div id="container-btn">
+        <button id="increment-btn" onclick="increment()">Add increment</button>
+        <button id="clear-btn" onclick="clear_it()">Clear</button>
+        <button id="Save-btn" onclick="save()">Save</button>
+      </div>
+      <label class="history-label">History</label>
+      <p id="history-p"></p>
+      <table class="history-table">
+        <thead>
+          <td>Time</td>
+          <td>Entered</td>
+        </thead>
+        <tr>
+          <td id="r1d1">--</td>
+          <td id="r1d2">--</td>
+        </tr>
+        <tr>
+          <td id="r2d1">--</td>
+          <td id="r2d2">--</td>
+        </tr>
+        <tr>
+          <td>Hello</td>
+          <td>hi</td>
+        </tr>
+      </table>
+      <script src="index.js"></script>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,7 @@
+This project introduced the basics of javascript.
+It is partly complete but missing components.
+
+Missing functionality:
+*Table history with dates
+*saving history to local, reloading does not refresh the history
+or refresh history and able to reload it from local.
